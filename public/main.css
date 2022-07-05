@@ -41,6 +41,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    display: none;
+     /* --------------------------------------------- */
 }
 
 .icon-container {
@@ -216,4 +218,47 @@ input[type = button]:hover {
 #b5:hover {
     background-color: var(--main-color);
     /* color: var(--White); */
+}
+
+
+/* S E C O N D     B L O C K */
+
+.second_block {
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    height: 50vh;
+    max-height: 360px;
+    /* background-color: var(--Dark-Blue); */
+    background-color: var(--Very-Dark-Blue);
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.cell_container {
+    width: 162px;
+    height: 108px;
+    background-image: url(../images/illustration-thank-you.svg);
+}
+
+.thanks {
+    font-size: 28px;
+}
+
+.thanks_text {
+    /* font-size: 28px; */
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.rating {
+    /* font-size: 1px; */
+    background-color: var(--Dark-Blue);
+    color: var(--main-color);
+    font-family: var(--main-font);
 }
