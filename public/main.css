@@ -241,6 +241,10 @@ input[type = button]:hover {
     /* ------------------------------------ */
 }
 
+.second_block2 {
+    display: block;
+}
+
 .cell_container {
     width: 162px;
     height: 108px;

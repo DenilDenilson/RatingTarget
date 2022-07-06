@@ -1,49 +1,91 @@
-// const ratio1 = document.querySelector('#btnControl1')
-// const ratio2 = document.querySelector('#btnControl2')
-// console.log(ratio1)
+const buttons = document.querySelectorAll('.butons');
+const submit = document.querySelector('#submit');
+const mainBlock = document.querySelector('.main_block')
+const secondBlock = document.querySelector('.second_block')
 
-// ratio1.addEventListener( 'change', () => {
-//   if(ratio1.checked) {
-//       // alert('si')
-//     ratio1.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--White)';
-//   }
-//   else {
-//     // alert('si')
-//   ratio1.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--Light-Grey)';
-//   }
-// });
+buttons[0].addEventListener('click', () => {
 
-// ratio2.addEventListener( 'change', () => {
-//   if(ratio2.checked) {
-//       // alert('si')
-//     ratio2.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--White)';
-//   }
-//   else {
-//     // alert('si')
-//   ratio2.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--Light-Grey)';
-//   }
-// });
-
-const ratios = document.querySelectorAll('.ratios');
-const block1 = document.querySelector('.main_block')
-const block2 = document.querySelector('.second_block')
-const submitButton = document.querySelector('#submit')
-
-ratios.forEach(ratio => {
-  ratio.addEventListener('change', () => {
-    // console.log(ratio.checked)
-      if (ratio.checked) {
-        // console.log('checked n')
-        ratio.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--White)'
-      }
-      if (!ratio.checked) {
-        ratio.nextElementSibling.firstElementChild.firstElementChild.style.color = 'var(--Light-Grey)'
-      }
-  })
+  buttons[0].style.color = 'var(--White)';
+  buttons[0].style.backgroundColor = 'var(--Medium-Grey)';
+  buttons[1].style.color = 'var(--Light-Grey)';
+  buttons[1].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[2].style.color = 'var(--Light-Grey)';
+  buttons[2].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[3].style.color = 'var(--Light-Grey)';
+  buttons[3].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[4].style.color = 'var(--Light-Grey)';
+  buttons[4].style.backgroundColor = 'var(--Dark-Blue)';
 })
 
-submitButton.addEventListener('mouseover', () => {
+buttons[1].addEventListener('click', () => {
 
-  block1.style.display = 'none'
-  block2.remove.style = 'display'
+  buttons[1].style.color = 'var(--White)';
+  buttons[1].style.backgroundColor = 'var(--Medium-Grey)';
+  buttons[0].style.color = 'var(--Light-Grey)';
+  buttons[0].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[2].style.color = 'var(--Light-Grey)';
+  buttons[2].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[3].style.color = 'var(--Light-Grey)';
+  buttons[3].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[4].style.color = 'var(--Light-Grey)';
+  buttons[4].style.backgroundColor = 'var(--Dark-Blue)';
 })
+
+buttons[2].addEventListener('click', () => {
+
+  buttons[2].style.color = 'var(--White)';
+  buttons[2].style.backgroundColor = 'var(--Medium-Grey)';
+  buttons[1].style.color = 'var(--Light-Grey)';
+  buttons[1].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[0].style.color = 'var(--Light-Grey)';
+  buttons[0].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[3].style.color = 'var(--Light-Grey)';
+  buttons[3].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[4].style.color = 'var(--Light-Grey)';
+  buttons[4].style.backgroundColor = 'var(--Dark-Blue)';
+})
+
+buttons[3].addEventListener('click', () => {
+
+  buttons[3].style.color = 'var(--White)';
+  buttons[3].style.backgroundColor = 'var(--Medium-Grey)';
+  buttons[1].style.color = 'var(--Light-Grey)';
+  buttons[1].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[2].style.color = 'var(--Light-Grey)';
+  buttons[2].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[0].style.color = 'var(--Light-Grey)';
+  buttons[0].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[4].style.color = 'var(--Light-Grey)';
+  buttons[4].style.backgroundColor = 'var(--Dark-Blue)';
+})
+
+buttons[4].addEventListener('click', () => {
+
+  buttons[4].style.color = 'var(--White)';
+  buttons[4].style.backgroundColor = 'var(--Medium-Grey)';
+  buttons[1].style.color = 'var(--Light-Grey)';
+  buttons[1].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[2].style.color = 'var(--Light-Grey)';
+  buttons[2].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[3].style.color = 'var(--Light-Grey)';
+  buttons[3].style.backgroundColor = 'var(--Dark-Blue)';
+  buttons[0].style.color = 'var(--Light-Grey)';
+  buttons[0].style.backgroundColor = 'var(--Dark-Blue)';
+})
+
+// buttons.forEach(boton => {
+  
+//   boton.addEventListener('click', () => {
+
+//     boton.style.color = 'var(--White)';
+//     boton.style.backgroundColor = 'var(--Medium-Grey)'
+//   })
+// })
+
+mainBlock.addEventListener('submit', () => {
+
+  mainBlock.style.display = 'none';
+  secondBlock.classList.add('second_block2');
+})
+
+
