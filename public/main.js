@@ -82,10 +82,10 @@ buttons[4].addEventListener('click', () => {
 //   })
 // })
 
-mainBlock.addEventListener('submit', () => {
+// submit.addEventListener('click', () => {
 
-  mainBlock.style.display = 'none';
-  secondBlock.classList.add('second_block2');
-})
+//   // mainBlock.style.display = 'none';
+//   // secondBlock.classList.add('second_block2');
+// })
 
 

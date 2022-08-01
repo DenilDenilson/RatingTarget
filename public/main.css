@@ -115,7 +115,7 @@ input[type = button] {
     font-family: var(--main-font);
 }
 
-input[type = submit] {
+input[type = submit] #submit{
     display: inline-block;
     margin: auto;
     width: 100%;
@@ -237,13 +237,21 @@ input[type = button]:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    display: none;
+    /* display: none; */
+    /* position: absolute; */
     /* ------------------------------------ */
 }
 
-.second_block2 {
+/* .second_block {
+    position: relative;
+    z-index: 20;
+} */
+
+/* .main_block {
+    position: relative;
+    z-index: 10;
     display: block;
-}
+} */
 
 .cell_container {
     width: 162px;
