@@ -115,7 +115,14 @@ input[type = button] {
     font-family: var(--main-font);
 }
 
-input[type = submit] #submit{
+a {
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+#submit{
     display: inline-block;
     margin: auto;
     width: 100%;
@@ -146,7 +153,7 @@ input[type = submit] #submit{
 
 /* E F E C T O S   E S P E C I A L E S */
 
-input[type = submit]:hover {
+#submit:hover {
     background-color: var(--White);
     color: var(--main-color);
 }
@@ -272,6 +279,8 @@ input[type = button]:hover {
 .rating {
     /* font-size: 1px; */
     background-color: var(--Dark-Blue);
+    padding: 6px;
+    border-radius: 12px;
     color: var(--main-color);
     font-family: var(--main-font);
 }
