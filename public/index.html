@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rating</title>
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
-    <form class="main_block">
-        <section class="icon-container">
-            <div id="star-icon">
+    <title>Frontend Mentor | Interactive rating component</title>
 
-            </div>
-        </section>
-        <h1>How did we do?</h1>
-        <p>Please let us know how we did with yout support request. All feedback is appreciated to help us improve our offerting!</p>
-        <section class="buttons-container">
-            <input type="button" value="1" id="b1" class="butons">
-            <input type="button" value="2" id="b2" class="butons">
-            <input type="button" value="3" id="b3" class="butons">
-            <input type="button" value="4" id="b4" class="butons">
-            <input type="button" value="5" id="b5" class="butons">
-            <!-- <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="4">
-            <input type="button" value="5"> -->
-        </section>
-        <section class="submit-container">
-            <a href="./send.html" id="submit">
-                <!-- <button>SUBMIT</button> -->
-                <!-- <input id="submit" type="submit" value="SUBMIT"> -->
-                SUBMIT
-            </a>
-        </section>
-        <!-- <input type="checkbox" id="btnControl"/>
-        <label class="btn" for="btnControl">
-            <img src="https://placekitten.com/200/140" id="btnLeft" /><input type="button" id="mmm" value="x">
-            <div>
-                GSASASA
-            </div>
-        </label> -->
-    </form>
-
-    <!-- <div class="second_block">
-        <div class="cell_container">
-
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="rating-state visible container">
+      <div class="rs-inner-container">
+        <div class="icon-star">
+          <img src="./images/icon-star.svg" alt="icon star" />
         </div>
-        <h4 class="rating">[Text]</h4>
-        <h1 class="thanks">Thank you!</h1>
-        <p class="thanks_text">We apreciate you taking the time to give a rating.
-            If you ever need more support, dont't hesitate to get in touch!
-        </p>
-    </div> -->
 
-    <script src="./main.js"></script>
-    <script src="./main2.js"></script>
-</body>
+        <div class="rating-state-text">
+          <h3 class="title">How did we do?</h3>
+          <p class="instructions">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="option one" value="1">1</button>
+        <button class="option two" value="2">2</button>
+        <button class="option three" value="3">3</button>
+        <button class="option four" value="4">4</button>
+        <button class="option five" value="5">5</button>
+      </div>
+
+      <button id="submitBtn" class="btn-submit" type="submit">SUBMIT</button>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-you-state container">
+      <div class="thku-inner-container">
+        <div class="thku-image separation">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+        </div>
+
+        <div class="rating-selection-div separation">
+          <p class="text-result">
+            You selected <span class="user-rating">?</span> out of 5
+          </p>
+        </div>
+
+        <!-- <div class="thankful-text"> -->
+        <h1 class="title separation">Thank you!</h1>
+        <p class="text separation">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.<br />Coded by
+      <a href="https://www.instagram.com/jcorrales07" target="_blank"
+        >Joe Corrales</a
+      >.
+    </div>
+  </body>
 </html>
